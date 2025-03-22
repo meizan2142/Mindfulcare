@@ -21,6 +21,10 @@ export const router = createBrowserRouter([
         path: "/service",
         element: <Service />,
       },
+      {
+        path: "/adib",
+        element: <Service />,
+      },
     ],
   },
 ]);
