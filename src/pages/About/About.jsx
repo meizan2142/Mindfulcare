@@ -1,9 +1,9 @@
-import AnotherHero from "../../SharedComponents/AnotherHero/AnotherHero";
+import CommonHero from "../../SharedComponents/AnotherHero/CommonHero";
 
 const About = () => {
   return (
     <div>
-      <AnotherHero />
+      <CommonHero />
     </div>
   );
 };
