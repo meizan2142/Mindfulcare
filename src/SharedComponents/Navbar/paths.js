@@ -8,5 +8,13 @@ export const navLinks = () => {
             path: '/about',
             pathName: 'About',
         },
+        {
+            path: '/services',
+            pathName: 'Services',
+        },
+        {
+            path: '/page',
+            pathName: 'Page',   
+        },
     ];
 };
