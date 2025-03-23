@@ -1,4 +1,10 @@
+import { NavLink } from "react-router";
+import { navLinks } from "./paths";
+
 const Navbar = () => {
+    const links = navLinks();
+    console.log(links);
+
     return (
 
         <nav className="flex items-center justify-between bg-[#393E46] px-4 py-2 text-white">
@@ -6,10 +12,11 @@ const Navbar = () => {
                 <h2>Logo</h2>
             </div>
             <ul className="flex items-center justify-between gap-6 text-slate-900">
-                <li className="cursor-pointer  rounded-full  px-6 py-2 text-white hover:bg-sky-600">Home</li>
-                <li className="cursor-pointer  rounded-full px-6 py-2 text-white hover:bg-sky-600">Services</li>
-                <li className="cursor-pointer  rounded-full px-6 py-2 text-white hover:bg-sky-600">About</li>
-
+                {
+                    links.map((link, index) => <li key={index} className="cursor-pointer  rounded-full  px-6 py-2 text-white hover:bg-sky-600">
+                        <NavLink to={link.path}>{link.pathName}</NavLink>
+                    </li>)
+                }
             </ul>
             <div>
                 <li className="cursor-pointer flex gap-2 list-none rounded-full px-6 py-2 text-white hover:bg-sky-600">
