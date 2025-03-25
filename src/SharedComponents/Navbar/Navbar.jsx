@@ -66,7 +66,7 @@ const Navbar = () => {
 
             {/* Mobile Menu - Only shows when menu is open */}
             {isMenuOpen && (
-                <div className="md:hidden">
+                <div className="block 2xl:hidden xl:hidden lg:hidden">
                     <div className="space-y-1 px-2 pb-3 pt-2">
                         {links.map((link, index) => (
                             <NavLink
